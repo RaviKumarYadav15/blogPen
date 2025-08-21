@@ -1,65 +1,64 @@
-# ✍️ BlogPen – AI Powered Blog Application
+# ✨ BlogPen - AI-Powered Blog App
 
-BlogPen is a modern **MERN stack** blogging platform with **AI-assisted content creation**.  
-It provides a seamless writing experience, powerful admin tools, and an engaging reader interface.  
-
-Built with **React, Vite, TailwindCSS, Node.js, Express, MongoDB, and GEMINI API**.  
+BlogPen is a modern **MERN stack blog application** that leverages AI (via Gemini API) for content generation. It features user authentication, a moderated comment system, advanced search, and a responsive design. Upcoming: subscription-based features.
 
 ---
 
-## ✨ Features
+## 🎯 Features
+
+### Core Functionality
+- 🔐 **Secure Authentication** – JWT-based user registration and login.
+- 🤖 **AI-Powered Content Generation** – Create blog posts with AI assistance (Gemini API).
+- 💬 **Moderated Comment System** – Admin approval workflow for user comments.
+- 🔍 **Advanced Search & Discovery** – Find content by keywords, categories, or authors.
+- 📱 **Fully Responsive Design** – Optimized for all devices.
+- 👥 **Role-Based Access Control** – Separate admin and user interfaces.
+
+### User Experience
+- 🎨 **Modern UI/UX** – Built with **TailwindCSS**.
+- 🖥 **Intuitive Dashboard** – Easy content management for authors and admins.
+- 📂 **Category Filtering** – Browse by Technology, Startup, Lifestyle, Finance.
+- 👍 **User Reactions** – Interactive engagement system for readers.
+
+### Technical Excellence
+- ⚡ **Optimized Performance** – Fast loading with **Vite**.
+- 🛠 **RESTful API Architecture** – Clean, maintainable backend structure.
+- 📊 **Admin Dashboard** – Comprehensive content management interface.
+
+---
 
 ## 👥 User Roles
 
 ### 🔑 Admin Users
-Admins have full control over the platform:
-- 📝 **Content Management** – Create, edit, and delete blogs  
-- 💬 **Comment Moderation & Approval** – Review and approve user comments  
-- 👥 **User Management** – Manage platform users  
-- 📊 **Analytics Dashboard** – Access insights and statistics  
+- Full content management
+- Comment moderation & approval
+- User management
+- Analytics dashboard
 
 ### 👤 Regular Users
-Regular users can interact and contribute content:
-- ✍️ **Create & Manage Own Blogs** – Draft and publish personal posts  
-- 💬 **Comment on Posts** – Comments are subject to admin approval  
-- 🔍 **Browse & Search Blogs** – Explore content by keywords, categories, or authors  
-- ❤️ **React to Posts** – Like, upvote, or engage with content
-
-
-### 🎯 Core Functionality
-- 🔐 **Secure Authentication** – JWT-based user registration and login system  
-- 🤖 **AI-Powered Content Generation** – Create blog posts with AI assistance  
-- 💬 **Moderated Comment System** – Admin approval workflow for user comments  
-- 🔍 **Advanced Search & Discovery** – Find content by keywords, categories, or authors  
-- 📱 **Fully Responsive Design** – Optimized across all devices  
-- 👥 **Role-Based Access Control** – Separate **admin** and **user** interfaces  
-
-### 🎨 User Experience
-- 🎨 **Modern UI/UX** – Built with TailwindCSS  
-- 📊 **Intuitive Dashboard** – Easy content management for authors and admins  
-- 🗂 **Category Filtering** – Browse blogs by *Technology, Startup, Lifestyle, Finance*  
-- ❤️ **User Reactions** – Interactive engagement system for readers  
-
-### ⚡ Technical Excellence
-- ⚡ **Optimized Performance** – Fast builds & hot reload with Vite  
-- 🔗 **RESTful API Architecture** – Clean, maintainable backend  
-- 🛠 **Admin Dashboard** – Comprehensive content & comment management  
+- Create & manage own blogs
+- Comment on posts (subject to approval)
+- Browse & search blogs
+- React to posts
 
 ---
 
 ## 🛠 Tech Stack
 
-**Frontend**  
-- React  
-- Vite  
-- TailwindCSS  
-- React Router  
+**Frontend:**
+- React
+- Vite
+- TailwindCSS
+- React Router
 
-**Backend**  
-- Node.js  
-- Express.js  
-- MongoDB with Mongoose  
-- JWT Authentication  
+**Backend:**
+- Node.js
+- Express.js
+- MongoDB with Mongoose
+- JWT Authentication
+
+**AI Integration:**
+- Gemini API
 
 ---
 
@@ -100,12 +99,12 @@ http://localhost:5000/api/v1
 
 ## 🚀 Installation
 
-### ✅ Prerequisites
-- Node.js (v16+)  
-- MongoDB  
-- OpenAI API account  
+### Prerequisites
+- Node.js (v16 or higher)
+- MongoDB
+- Gemini API account
 
-### 📥 Clone the Repository
+### Clone the Repository
 ```bash
 git clone https://github.com/your-username/blogpen.git
 cd blogpen
@@ -123,14 +122,30 @@ cd ../client
 npm install
 
 ⚙️ Environment Variables
-Create .env in server/:
-PORT=5000
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
-OPENAI_API_KEY=your_openai_api_key
+# Server
+PORT=8080
 NODE_ENV=development
-CLIENT_URL=http://localhost:3000
-CORS_ORIGIN=http://localhost:3000
+CLIENT_URL="http://localhost:5173"
+CORS_ORIGIN="http://localhost:5174"
+
+# Database
+MONGODB_URI=mong
+
+# JWT
+JWT_TOKEN_SECRET=ravikumaryadav
+JWT_TOKEN_EXPIRY=1m
+
+# Cloudinary
+CLOUDINARY_CLOUD_NAME=dcf6upw3r
+CLOUDINARY_API_KEY=1415718
+CLOUDINARY_API_SECRET=ctjljZUdiptv8
+
+# AI / External APIs
+GEMINI_API_KEY="AIzaSyDJ3I5__E804-c"
+
+# Admin Credentials
+ADMIN_EMAIL="admin@example.com"
+ADMIN_PASSWORD="abcde"
 
 ▶️ Running the Application
 # Start backend (from server directory)
@@ -143,6 +158,12 @@ App available at:
 🌐 Frontend → http://localhost:3000
 ⚙️ Backend API → http://localhost:5000
 📊 Admin Dashboard → http://localhost:3000/admin
+
+🔮 Coming Soon
+
+Subscription Features: Paid memberships, premium content access, and enhanced user analytics.
+
+Advanced AI Enhancements: Personalized blog suggestions based on user preferences.
 
 
 🤝 Contributing
@@ -162,8 +183,6 @@ Open a Pull Request
 If you find BlogPen useful, please ⭐ the repo on GitHub!
 
 📞 Contact
-Maintainer: [Your Name]
-📧 Email: your.email@blogpen.com
-🐦 Twitter: @blogpen
+Maintainer: Ravi Kumar Yadav
 
 ✨ Happy Blogging with BlogPen! 🚀
